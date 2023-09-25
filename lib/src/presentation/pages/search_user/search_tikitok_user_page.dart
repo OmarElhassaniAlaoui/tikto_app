@@ -57,7 +57,7 @@ class SearchTiktokUserPage extends GetView<SearchFormController> {
                 if (controller.formKey.currentState!.validate()) {
                   controller.formKey.currentState!.save();
                   controller.username.value = controller.usernameController.text;
-                  Get.to(() => const Template());
+                  Get.to(() =>  TemplatePage());
                 }
                 
               },

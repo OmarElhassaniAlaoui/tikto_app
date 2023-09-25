@@ -1,9 +1,11 @@
-import 'dart:convert';
+import 'package:flutter_mini_projet_omar/src/app/core/services/api_service.dart';
 
-import 'package:flutter_mini_projet_omar/src/app/resources/constant_manager.dart';
-import 'package:flutter_mini_projet_omar/src/data/model/user_info_model.dart';
-import 'package:http/http.dart' as http;
-abstract class UserRemoteDataSource {
-  Future<User?> getUser();
-}  
-
+class UserRemoteDataSource {
+  ApiService apiService;
+  UserRemoteDataSource({required this.apiService});
+  getUserInfo() async {
+    var data = await apiService
+        .getData('https://tikio.app/json/x2b1/userInfo.json', {});
+    return data.fold((l) => l, (r) => r); 
+  }
+}

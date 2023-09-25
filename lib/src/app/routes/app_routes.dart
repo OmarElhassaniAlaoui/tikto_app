@@ -22,6 +22,6 @@ List<GetPage<dynamic>> routes = [
   ),
   GetPage(
     name: "/template",
-    page: () => const Template(),
+    page: () =>  TemplatePage(),
   ),
 ];

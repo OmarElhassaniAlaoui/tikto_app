@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mini_projet_omar/src/app/bind/initial_binding.dart';
 import 'package:flutter_mini_projet_omar/src/app/routes/app_routes.dart';
 import 'package:flutter_mini_projet_omar/src/app/services/app_service.dart';
 import 'package:get/get.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const SearchTiktokUserPage(), 
+      initialBinding: InitialBinding(),
       initialRoute: '/searchTiktokUserPage',
       getPages: routes,
     );

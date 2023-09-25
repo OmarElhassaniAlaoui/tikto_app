@@ -45,7 +45,8 @@ class User {
       avatarThumb: json['avatarThumb'] as String,
     );
   }
-}
+} 
+
 
 class UserStats {
   final int followerCount;
