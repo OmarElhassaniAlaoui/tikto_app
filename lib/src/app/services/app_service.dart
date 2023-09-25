@@ -12,4 +12,5 @@ class AppServices extends GetxService {
 
 initialServices() async {
   await Get.putAsync(() => AppServices().init());
-}
+} 
+

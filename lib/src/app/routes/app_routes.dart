@@ -6,10 +6,10 @@ import '../../presentation/pages/following_list/following_list_page.dart';
 import '../../presentation/pages/home/home.dart';
 import '../../presentation/pages/search_user/search_tikitok_user_page.dart';
 
-List<GetPage> routes = [
+List<GetPage<dynamic>> routes = [
   GetPage(
     name: '/searchTiktokUserPage',
-    page: () => SearchTiktokUserPage(),
+    page: () =>const SearchTiktokUserPage(),
   ),
   GetPage(name: '/home', page: () => Home()),
   GetPage(

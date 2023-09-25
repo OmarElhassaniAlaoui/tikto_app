@@ -1,4 +1,4 @@
-import 'package:flutter_mini_projet_omar/src/data/model/feeling_model.dart';
+import 'package:flutter_mini_projet_omar/src/presentation/pages/home/models/feeling_model.dart';
 import 'package:get/get.dart';
 
 class FeelingWidgetController extends GetxController {
@@ -25,4 +25,6 @@ class FeelingWidgetController extends GetxController {
 
     update();
   }
+ 
+
 }

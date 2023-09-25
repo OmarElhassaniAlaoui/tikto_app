@@ -10,6 +10,7 @@ class MiddelWare extends GetMiddleware {
   AppServices service = Get.find();
   @override
   RouteSettings? redirect(String? route) {
+    
     if (service.sharedPreferences.getString("step") == '2') {
       return const RouteSettings(name: AppPages.home);
     }
